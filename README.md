@@ -1,0 +1,3 @@
+# sync_representation
+
+Este repositorio es una amplicación de los experimentos descriptos en "[Biological phenomena related to synchronization in the auditory system and their representation by PLLs](./BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20—%20Chapter%201,%20NOVA%201.0%20documentation.html)", (Nova Publishers, Sept. 2020, ch. 2, pp.39--96.). Los programas en versión python utilizados que figuran más abajo fueron utilizados para reproducir ciertos aspectos biológicos del sistema auditivo, mediante el sistema que llamamos *representación sincrónica*, basado en PLLs y filtros lineales.
