@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>BIOLOGICAL SYNCHRONIZATION MODELED BY PLLS AND PITCH DETECTION — Chapter 1, NOVA 1.0 documentation</title>
+    <link rel="stylesheet" href="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/bizstyle.css" type="text/css">
+    <link rel="stylesheet" href="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/pygments.css" type="text/css">
+    
+    <script id="documentation_options" data-url_root="./" src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/documentation_options.js"></script>
+    <script src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/jquery.js"></script>
+    <script src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/underscore.js"></script>
+    <script src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/doctools.js"></script>
+    <script src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/language_data.js"></script>
+    <script async="async" src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/latest.js"></script>
+    <script src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/bizstyle.js"></script>
+    <link rel="index" title="Index" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/genindex.html">
+    <link rel="search" title="Search" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/search.html">
+    <link rel="next" title="Introduction" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/introduction.html">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  <script type="text/javascript" async="" src="BIOLOGICAL%20SYNCHRONIZATION%20MODELED%20BY%20PLLS%20AND%20PITCH%20DETECTION%20%E2%80%94%20Chapter%201,%20NOVA%201.0%20documentation_files/MathJax.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head><body><div id="MathJax_Message" style="display: none;"></div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/introduction.html" title="Introduction" accesskey="N">next</a> |</li>
+        <li><a href="#">Home </a> |&nbsp;</li>
+ 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">BIOLOGICAL SYNCHRONIZATION MODELED BY PLLS AND PITCH DETECTION</a><ul>
+<li><a class="reference internal" href="#abstract">Abstract</a><ul>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/introduction.html" title="next chapter">Introduction</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/_sources/index.rst.txt" rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="biological-synchronization-modeled-by-plls-and-pitch-detection">
+<h1>BIOLOGICAL SYNCHRONIZATION MODELED BY PLLS AND PITCH DETECTION<a class="headerlink" href="#biological-synchronization-modeled-by-plls-and-pitch-detection" title="Permalink to this headline">¶</a></h1>
+<p><strong>Patricia A. Pelle and Claudio F. Estienne</strong></p>
+<p><em>Universidad de Buenos Aires, Facultad de Ingenieria, Instituto de Ingenieria Biomedica, Buenos Aires, Argentina.</em></p>
+<p><a class="reference external" href="mailto:ppelle%40fi.uba.ar">ppelle<span>@</span>fi<span>.</span>uba<span>.</span>ar</a>, <a class="reference external" href="mailto:cestien%40fi.uba.ar">cestien<span>@</span>fi<span>.</span>uba<span>.</span>ar</a></p>
+<div class="section" id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
+<p>Phase Locked Loops are nonlinear devices that sense the phase of a 
+sinusoidal signal and generate internally another sinusoidal signal that
+ closely reproduces that phase. Making use of a feedback closed loop, an
+ internal sinusoidal oscillator of variable frequency is driven to be in
+ lock with the instantaneous phase of the input signal, following its 
+fluctuation very precisely. PLLs are widely used in communications 
+systems, including FM demodulation, frequency multiplexing, and 
+frequency synthesizers, particularly due to its ability to automatically
+ track periodic signals even under very severe noise conditions. Besides
+ these classical applications, the similarity between biological 
+evidence displaying active phenomena of synchronous behavior in our 
+auditory system and the PLL operation, motivates us to test this device 
+in the area of speech processing. In this chapter, along with the 
+description of the normal operation of a PLLs and its design, some 
+applications that resemble that biological behavior are described. 
+Specifically, it can be shown that the combination between a passive 
+filter and a PLL has a close relation with the characteristic frequency 
+described for the auditory nerve fibers under sinusoidal signals 
+stimulation. Finally, a system which is able to detect pitch variations 
+of harmonic complex sounds is presented. It uses many of those tandem 
+passive filter-PLL and combines their outputs in a final statistical 
+harmonic consensus detector stage. Both PLL robustness to noise as well 
+as redundancy present in the consensus stage results in a pitch detector
+ system with very low error rate.</p>
+<p><strong>Keywords:</strong> Auditory Experiments, Synchronism, Pitch.</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/basic_pll.html">Basic PLL in discrete time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/basic_pll.html#pll-description-in-continuous-time">PLL description in continuous time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/basic_pll.html#pll-linear-description-and-discrete-time-equivalent">PLL linear description and discrete time equivalent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/basic_pll.html#schematic-description-of-pll-and-associated-circuits">Schematic description of PLL and associated circuits</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html">Biological phenomena related to synchronization in the auditory system and their representation by PLLs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#frequency-selectivity-and-the-frequency-place-relation">Frequency selectivity and the frequency-place relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#detailed-description-of-the-frequency-response-of-the-membrane-partitions-tuning-curves">Detailed description of the frequency response of the membrane partitions: tuning curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#fiber-response-in-the-auditory-nerve-synchronization">Fiber response in the auditory nerve: synchronization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#non-linear-behavior-and-the-second-filter-hypothesis">Non linear behavior and the second filter hypothesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#synchronous-representation-using-plls">Synchronous Representation using PLLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#tuning-curve-in-the-synchronous-representation">Tuning curve in the synchronous representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#two-tones-suppression-effect">Two tones suppression effect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#two-tones-of-same-amplitude-stimuli">Two tones of same amplitude stimuli</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/biologic_sync_rep.html#conclusions-about-the-biological-approach-of-the-synchronous-representation">Conclusions about the biological approach of the synchronous representation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html">Application of the synchronous representation to pitch detection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html#observations-of-pitch-in-the-auditory-system">Observations of pitch in the auditory system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html#proposed-system-structure">Proposed system structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html#determination-of-the-frequency-components-of-rectified-channels">Determination of the Frequency components of rectified channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html#central-statistical-processor-to-obtain-pitch-from-frequency-samples">Central statistical processor to obtain pitch from frequency samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/pitch_detection.html#results">Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/conclusions.html">Final conclusions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/references.html">References</a></li>
+</ul>
+</div>
+<div class="section" id="indices-and-tables">
+<h3>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<li><p><a class="reference internal" href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/genindex.html"><span class="std std-ref">Index</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="file:///mnt/home/ppelle/pllfase.1/publicaciones/nova_pllbookchapter/corregido/sphinx/.build/html/rst/introduction.html" title="Introduction">next</a> |</li>
+        <li><a href="#">Home </a> |&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        © Copyright 2020, Patricia Pelle.
+      Last updated on May 21, 2020.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.2.
+    </div>
+  
+</body></html>
